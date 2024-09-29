@@ -27,7 +27,7 @@ class YearlyData {
 final chartDataProvider = FutureProvider<List<YearlyData>>((ref) async {
   final response = await http.get(
     Uri.parse(
-        'https://api.data.gov.in/resource/526548e3-c7b1-445b-ab8a-d2aa114e34a9?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json'), // Replace with your API URL
+        'https://api.data.gov.in/resource/526548e3-c7b1-445b-ab8a-d2aa114e34a9?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json'),
   );
 
   if (response.statusCode == 200) {
